@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="6E4DD65B-CE8D-263E-D44A-B509A2CFE522" mainViewID="D048DA2D-0809-40C3-078A-891A666233A4">
+<createdBy>tromano</createdBy>
+<createdTime>2025-04-22 00:17:33 UTC</createdTime>
+<ownerDesignName>mapa_do_tesouro</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</LogicalDesign>

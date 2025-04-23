@@ -1,0 +1,102 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="DA67FA6F-7154-93CD-B864-788DED88B059" name="T_FTS_SENSOR">
+<createdBy>tromano</createdBy>
+<createdTime>2025-04-22 15:08:50 UTC</createdTime>
+<ownerDesignName>mapa_do_tesouro</ownerDesignName>
+<engineerTo>
+<item key="905EE9FB-C735-7F72-DB61-C69007673BDC" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="cd_sensor" id="D0873806-DE55-6ECA-132D-EE738FAFD673">
+<createdBy>tromano</createdBy>
+<createdTime>2025-04-22 15:08:50 UTC</createdTime>
+<ownerDesignName>mapa_do_tesouro</ownerDesignName>
+<engineerTo>
+<item key="905EE9FB-C735-7F72-DB61-C69007673BDC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cd_sensor_tipo" id="6B48CF14-56B3-D71B-B326-B43E0244E30D">
+<createdBy>tromano</createdBy>
+<createdTime>2025-04-22 15:12:33 UTC</createdTime>
+<generatorID>0041811A-D6CD-348B-4C60-24F562DC7000</generatorID>
+<ownerDesignName>mapa_do_tesouro</ownerDesignName>
+<engineerTo>
+<item key="905EE9FB-C735-7F72-DB61-C69007673BDC" value="true"/>
+</engineerTo>
+<referedAttribute>2929D4C3-76AB-67C3-802C-94A66DB06917</referedAttribute>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cd_campo" id="81903FC9-CF6E-76EC-B281-590C36B9ACEC">
+<createdBy>tromano</createdBy>
+<createdTime>2025-04-22 16:46:28 UTC</createdTime>
+<generatorID>D31E7F0A-FD12-EB8D-7F80-CAF9D5C92E73</generatorID>
+<ownerDesignName>mapa_do_tesouro</ownerDesignName>
+<engineerTo>
+<item key="905EE9FB-C735-7F72-DB61-C69007673BDC" value="true"/>
+</engineerTo>
+<referedAttribute>9F5B958C-C06E-1516-C737-F0EC7FB8093E</referedAttribute>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cd_zona" id="7C7A6E9F-D4BE-28E9-979D-0DFF7640819B">
+<createdBy>tromano</createdBy>
+<createdTime>2025-04-22 16:46:28 UTC</createdTime>
+<generatorID>D31E7F0A-FD12-EB8D-7F80-CAF9D5C92E73</generatorID>
+<ownerDesignName>mapa_do_tesouro</ownerDesignName>
+<engineerTo>
+<item key="905EE9FB-C735-7F72-DB61-C69007673BDC" value="true"/>
+</engineerTo>
+<referedAttribute>EAA4EE9B-21E4-34DA-8464-A9D40B22288F</referedAttribute>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nm_sensor" id="D78A852D-9781-1D82-C16F-29F9F1448BC0">
+<createdBy>tromano</createdBy>
+<createdTime>2025-04-22 15:08:50 UTC</createdTime>
+<ownerDesignName>mapa_do_tesouro</ownerDesignName>
+<engineerTo>
+<item key="905EE9FB-C735-7F72-DB61-C69007673BDC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="DFEDEC9F-6766-991A-AA2F-BA55A314C58E" name="T_FTS_FAZENDA PK">
+<createdBy>tromano</createdBy>
+<createdTime>2025-04-22 15:08:50 UTC</createdTime>
+<ownerDesignName>mapa_do_tesouro</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="905EE9FB-C735-7F72-DB61-C69007673BDC" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>D0873806-DE55-6ECA-132D-EE738FAFD673</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

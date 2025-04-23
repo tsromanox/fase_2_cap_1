@@ -1,0 +1,50 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="87DF4FBD-0801-BDFA-D15A-68AD8B9639D1" name="T_FTS_FAZENDA">
+<createdBy>tromano</createdBy>
+<createdTime>2025-04-22 18:07:31 UTC</createdTime>
+<generatorID>1D20BC6E-C537-D650-5F71-4AB347A2FA32</generatorID>
+<ownerDesignName>mapa_do_tesouro</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cd_fazenda" id="28A0B31D-3DD8-E8D6-2FDD-58F4D0A1DF84">
+<createdBy>tromano</createdBy>
+<createdTime>2025-04-22 18:07:31 UTC</createdTime>
+<generatorID>16DD047A-97F9-AFAE-BE88-18A1A3C078A6</generatorID>
+<ownerDesignName>mapa_do_tesouro</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nm_fazenda" id="47397C23-6EB7-C996-7AFB-72B5C87BB5A2">
+<createdBy>tromano</createdBy>
+<createdTime>2025-04-22 18:07:31 UTC</createdTime>
+<generatorID>2BBC42E9-9464-072A-96C9-29AA8952A6E2</generatorID>
+<ownerDesignName>mapa_do_tesouro</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A8B6864A-2592-ECEE-58E9-0500B64613E4" name="PK_T_FTS_FAZENDA">
+<createdBy>tromano</createdBy>
+<createdTime>2025-04-22 18:07:31 UTC</createdTime>
+<generatorID>2630C9BD-40D0-1138-178B-A34F92530F81</generatorID>
+<ownerDesignName>mapa_do_tesouro</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="28A0B31D-3DD8-E8D6-2FDD-58F4D0A1DF84"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

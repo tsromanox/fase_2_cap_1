@@ -1,0 +1,60 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="D627019C-9C57-49DD-3213-3C68B5AE8048" name="T_FTS_CULTURA">
+<createdBy>tromano</createdBy>
+<createdTime>2025-04-22 14:17:49 UTC</createdTime>
+<ownerDesignName>mapa_do_tesouro</ownerDesignName>
+<engineerTo>
+<item key="905EE9FB-C735-7F72-DB61-C69007673BDC" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="cd_cultura" id="8DB48975-4E3A-2359-2905-D130375AC514">
+<createdBy>tromano</createdBy>
+<createdTime>2025-04-22 14:17:49 UTC</createdTime>
+<ownerDesignName>mapa_do_tesouro</ownerDesignName>
+<engineerTo>
+<item key="905EE9FB-C735-7F72-DB61-C69007673BDC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nm_cultura" id="AE97DD57-D97F-A1A0-8DF2-508AF4D32855">
+<createdBy>tromano</createdBy>
+<createdTime>2025-04-22 14:17:49 UTC</createdTime>
+<ownerDesignName>mapa_do_tesouro</ownerDesignName>
+<engineerTo>
+<item key="905EE9FB-C735-7F72-DB61-C69007673BDC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="CCD58FB5-D304-92BC-1D72-96CA1A19E275" name="T_FTS_FAZENDA PK">
+<createdBy>tromano</createdBy>
+<createdTime>2025-04-22 14:17:49 UTC</createdTime>
+<ownerDesignName>mapa_do_tesouro</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="905EE9FB-C735-7F72-DB61-C69007673BDC" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>8DB48975-4E3A-2359-2905-D130375AC514</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

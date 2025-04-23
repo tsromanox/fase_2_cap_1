@@ -1,0 +1,50 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="588A964D-EB3F-6970-246B-4336CEB0BBEF" name="T_FTS_SENSOR_TIPO">
+<createdBy>tromano</createdBy>
+<createdTime>2025-04-22 18:07:31 UTC</createdTime>
+<generatorID>826F876E-F475-B4B9-C366-D576C95EAB9E</generatorID>
+<ownerDesignName>mapa_do_tesouro</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cd_sensor_tipo" id="64FC9D9A-1C0D-DECE-B8A4-A5D696A77B3B">
+<createdBy>tromano</createdBy>
+<createdTime>2025-04-22 18:07:31 UTC</createdTime>
+<generatorID>2929D4C3-76AB-67C3-802C-94A66DB06917</generatorID>
+<ownerDesignName>mapa_do_tesouro</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nm_sensor_tipo" id="CE9F0602-00E1-7930-484A-AFC8B04049CA">
+<createdBy>tromano</createdBy>
+<createdTime>2025-04-22 18:07:31 UTC</createdTime>
+<generatorID>3F16BC6E-CF3F-622A-AC0C-FCB9D607CD35</generatorID>
+<ownerDesignName>mapa_do_tesouro</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5CA55533-D11A-81D5-BBE7-9B2B7D8B779B" name="PK_T_FTS_SENSOR_TIPO">
+<createdBy>tromano</createdBy>
+<createdTime>2025-04-22 18:07:31 UTC</createdTime>
+<generatorID>F9410963-EA5D-BDA6-6518-0973469B7243</generatorID>
+<ownerDesignName>mapa_do_tesouro</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="64FC9D9A-1C0D-DECE-B8A4-A5D696A77B3B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

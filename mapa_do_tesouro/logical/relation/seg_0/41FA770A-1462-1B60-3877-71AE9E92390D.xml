@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="fazenda_campo" directorySegmentName="seg_0" id="41FA770A-1462-1B60-3877-71AE9E92390D">
+<createdBy>tromano</createdBy>
+<createdTime>2025-04-22 14:25:04 UTC</createdTime>
+<ownerDesignName>mapa_do_tesouro</ownerDesignName>
+<engineerTo>
+<item key="905EE9FB-C735-7F72-DB61-C69007673BDC" value="true"/>
+</engineerTo>
+<sourcePk>2630C9BD-40D0-1138-178B-A34F92530F81</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>1D20BC6E-C537-D650-5F71-4AB347A2FA32</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>255E7647-6959-E046-B8C0-ABB5EB51FD5D</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

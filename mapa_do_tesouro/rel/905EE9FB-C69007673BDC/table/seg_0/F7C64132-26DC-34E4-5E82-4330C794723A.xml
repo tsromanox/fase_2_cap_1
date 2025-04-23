@@ -1,0 +1,116 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F7C64132-26DC-34E4-5E82-4330C794723A" name="T_FTS_METRICA">
+<createdBy>tromano</createdBy>
+<createdTime>2025-04-22 18:07:31 UTC</createdTime>
+<generatorID>D9D2703F-6E93-2EDB-99C0-38C7A81AD839</generatorID>
+<ownerDesignName>mapa_do_tesouro</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cd_sensor" id="9DC02103-164F-E1E8-F56A-9FE115BAAB3B">
+<createdBy>tromano</createdBy>
+<createdTime>2025-04-22 18:07:31 UTC</createdTime>
+<generatorID>0FAFAB66-F7AD-833F-81A6-A424AC8C964E</generatorID>
+<ownerDesignName>mapa_do_tesouro</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D357F786-39D2-F822-ED8C-A490A4780D93" referredColumn="090BEAB0-5665-80CF-3B5C-2020CB6C6D8F"/>
+</associations>
+</Column>
+<Column name="cd_metrica" id="138FF67E-9E71-EE34-F934-48F75301A835">
+<createdBy>tromano</createdBy>
+<createdTime>2025-04-22 18:07:31 UTC</createdTime>
+<generatorID>A7B8B79A-1751-7891-205A-BEF451A4E888</generatorID>
+<ownerDesignName>mapa_do_tesouro</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="vl_metrica" id="80B0C0EC-201C-E539-8A21-3419FB2EFE33">
+<createdBy>tromano</createdBy>
+<createdTime>2025-04-22 18:07:31 UTC</createdTime>
+<generatorID>C1307501-34A6-964D-55DF-E42A2A24E549</generatorID>
+<ownerDesignName>mapa_do_tesouro</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,4,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="vl_longitude" id="FD80D8BA-10C3-0011-5A9C-6EF4B2F2DF5A">
+<createdBy>tromano</createdBy>
+<createdTime>2025-04-22 18:07:31 UTC</createdTime>
+<generatorID>1C8E67AC-6C0E-433E-7609-D38D499A2630</generatorID>
+<ownerDesignName>mapa_do_tesouro</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<dataTypeScale>6</dataTypeScale>
+<ownDataTypeParameters>,9,6</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="vl_latitude" id="7933C20C-380E-D0C5-4BDA-96F909D786A8">
+<createdBy>tromano</createdBy>
+<createdTime>2025-04-22 18:07:31 UTC</createdTime>
+<generatorID>F3859329-55A5-5F66-41E6-375D9DC63BFF</generatorID>
+<ownerDesignName>mapa_do_tesouro</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<dataTypeScale>6</dataTypeScale>
+<ownDataTypeParameters>,9,6</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dt_coleta" id="D3F23BF5-4094-B915-B2C9-9B048D972842">
+<createdBy>tromano</createdBy>
+<createdTime>2025-04-22 18:07:31 UTC</createdTime>
+<generatorID>E33C67C5-2700-3754-DDF8-DC2E43520D16</generatorID>
+<ownerDesignName>mapa_do_tesouro</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="10BDE578-53E4-BBD0-EF27-B4FEFBEF3938" name="PK_T_FTS_METRICA">
+<createdBy>tromano</createdBy>
+<createdTime>2025-04-22 18:07:31 UTC</createdTime>
+<generatorID>8B8855D9-9530-88E8-2F11-35CA74C152FC</generatorID>
+<ownerDesignName>mapa_do_tesouro</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="138FF67E-9E71-EE34-F934-48F75301A835"/>
+<colUsage columnID="9DC02103-164F-E1E8-F56A-9FE115BAAB3B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4EE25267-AFA4-AB5E-21BE-0424E05526EE" name="FK_METRICA_SENSOR">
+<createdBy>tromano</createdBy>
+<createdTime>2025-04-22 18:07:31 UTC</createdTime>
+<generatorID>A2F823B2-8812-690E-CCA2-6D39F26DA931</generatorID>
+<ownerDesignName>mapa_do_tesouro</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9DC02103-164F-E1E8-F56A-9FE115BAAB3B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,90 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F816127D-E457-BFFA-A9B2-17D5EF3DB334" name="T_FTS_ZONA">
+<createdBy>tromano</createdBy>
+<createdTime>2025-04-22 14:12:05 UTC</createdTime>
+<ownerDesignName>mapa_do_tesouro</ownerDesignName>
+<engineerTo>
+<item key="905EE9FB-C735-7F72-DB61-C69007673BDC" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="cd_campo" id="9F5B958C-C06E-1516-C737-F0EC7FB8093E">
+<createdBy>tromano</createdBy>
+<createdTime>2025-04-22 14:47:50 UTC</createdTime>
+<generatorID>20609284-5D4D-3982-CA88-79F3AB7678F2</generatorID>
+<ownerDesignName>mapa_do_tesouro</ownerDesignName>
+<engineerTo>
+<item key="905EE9FB-C735-7F72-DB61-C69007673BDC" value="true"/>
+</engineerTo>
+<referedAttribute>53A32DD9-56A2-0BC1-8F28-6E734536A987</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cd_zona" id="EAA4EE9B-21E4-34DA-8464-A9D40B22288F">
+<createdBy>tromano</createdBy>
+<createdTime>2025-04-22 14:12:05 UTC</createdTime>
+<ownerDesignName>mapa_do_tesouro</ownerDesignName>
+<engineerTo>
+<item key="905EE9FB-C735-7F72-DB61-C69007673BDC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cd_cultura" id="35EE2EF4-FBC9-8ADA-452F-550E40F4549D">
+<createdBy>tromano</createdBy>
+<createdTime>2025-04-22 14:50:29 UTC</createdTime>
+<generatorID>126B0160-445E-71DA-09EA-D66BDFB0CEBD</generatorID>
+<ownerDesignName>mapa_do_tesouro</ownerDesignName>
+<engineerTo>
+<item key="905EE9FB-C735-7F72-DB61-C69007673BDC" value="true"/>
+</engineerTo>
+<referedAttribute>8DB48975-4E3A-2359-2905-D130375AC514</referedAttribute>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nm_zona" id="A08AFA87-174E-DB17-7C88-88E0ECB3648D">
+<createdBy>tromano</createdBy>
+<createdTime>2025-04-22 14:12:05 UTC</createdTime>
+<ownerDesignName>mapa_do_tesouro</ownerDesignName>
+<engineerTo>
+<item key="905EE9FB-C735-7F72-DB61-C69007673BDC" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="4E995D5A-6FE5-34B6-5B08-51014662FBD7" name="T_FTS_FAZENDA PK">
+<createdBy>tromano</createdBy>
+<createdTime>2025-04-22 14:12:05 UTC</createdTime>
+<ownerDesignName>mapa_do_tesouro</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="905EE9FB-C735-7F72-DB61-C69007673BDC" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>EAA4EE9B-21E4-34DA-8464-A9D40B22288F</attributeRef>
+<attributeRef>9F5B958C-C06E-1516-C737-F0EC7FB8093E</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

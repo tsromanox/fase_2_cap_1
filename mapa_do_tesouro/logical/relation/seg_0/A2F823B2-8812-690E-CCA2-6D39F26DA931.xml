@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="sensor_metrica" directorySegmentName="seg_0" id="A2F823B2-8812-690E-CCA2-6D39F26DA931">
+<createdBy>tromano</createdBy>
+<createdTime>2025-04-22 17:20:42 UTC</createdTime>
+<ownerDesignName>mapa_do_tesouro</ownerDesignName>
+<engineerTo>
+<item key="905EE9FB-C735-7F72-DB61-C69007673BDC" value="true"/>
+</engineerTo>
+<sourcePk>DFEDEC9F-6766-991A-AA2F-BA55A314C58E</sourcePk>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>DA67FA6F-7154-93CD-B864-788DED88B059</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>D9D2703F-6E93-2EDB-99C0-38C7A81AD839</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

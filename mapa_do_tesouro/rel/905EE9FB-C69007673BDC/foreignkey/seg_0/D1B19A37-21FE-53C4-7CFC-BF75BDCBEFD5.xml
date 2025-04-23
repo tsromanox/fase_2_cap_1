@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="D1B19A37-21FE-53C4-7CFC-BF75BDCBEFD5" containerWithKeyObject="5A346EE2-682D-FB70-C491-A96258CC87C9" localFKIndex="A167C210-2357-3BD2-1825-413F38522F9A" name="FK_SENSOR_SENSOR_TIP">
+<createdBy>tromano</createdBy>
+<createdTime>2025-04-22 18:07:31 UTC</createdTime>
+<generatorID>0041811A-D6CD-348B-4C60-24F562DC7000</generatorID>
+<ownerDesignName>mapa_do_tesouro</ownerDesignName>
+<referredTableLongName>T_FTS_SENSOR_TIPO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>588A964D-EB3F-6970-246B-4336CEB0BBEF</referredTableID>
+<keyObject>5CA55533-D11A-81D5-BBE7-9B2B7D8B779B</keyObject>
+<referredKeyID>5CA55533-D11A-81D5-BBE7-9B2B7D8B779B</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>cd_sensor_tipo</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="BEEDC51E-C144-8A42-F9A8-0096CBA1AB6F" containerWithKeyObject="C9242BD9-3996-E657-3A58-EB21D1680422" localFKIndex="F2791346-3CC1-2D11-15D6-6DAF84289DA9" name="FK_FTS_CAMP_FAZENDA">
+<createdBy>tromano</createdBy>
+<createdTime>2025-04-22 18:07:31 UTC</createdTime>
+<generatorID>41FA770A-1462-1B60-3877-71AE9E92390D</generatorID>
+<ownerDesignName>mapa_do_tesouro</ownerDesignName>
+<referredTableLongName>T_FTS_FAZENDA</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>87DF4FBD-0801-BDFA-D15A-68AD8B9639D1</referredTableID>
+<keyObject>A8B6864A-2592-ECEE-58E9-0500B64613E4</keyObject>
+<referredKeyID>A8B6864A-2592-ECEE-58E9-0500B64613E4</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>cd_fazenda</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="zona_cultura" directorySegmentName="seg_0" id="126B0160-445E-71DA-09EA-D66BDFB0CEBD">
+<createdBy>tromano</createdBy>
+<createdTime>2025-04-22 14:43:47 UTC</createdTime>
+<ownerDesignName>mapa_do_tesouro</ownerDesignName>
+<engineerTo>
+<item key="905EE9FB-C735-7F72-DB61-C69007673BDC" value="true"/>
+</engineerTo>
+<sourcePk>4E995D5A-6FE5-34B6-5B08-51014662FBD7</sourcePk>
+<targetPk>CCD58FB5-D304-92BC-1D72-96CA1A19E275</targetPk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>F816127D-E457-BFFA-A9B2-17D5EF3DB334</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>D627019C-9C57-49DD-3213-3C68B5AE8048</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

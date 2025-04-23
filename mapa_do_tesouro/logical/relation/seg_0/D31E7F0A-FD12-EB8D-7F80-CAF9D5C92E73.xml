@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="zona_sensor" directorySegmentName="seg_0" id="D31E7F0A-FD12-EB8D-7F80-CAF9D5C92E73">
+<createdBy>tromano</createdBy>
+<createdTime>2025-04-22 16:46:28 UTC</createdTime>
+<ownerDesignName>mapa_do_tesouro</ownerDesignName>
+<engineerTo>
+<item key="905EE9FB-C735-7F72-DB61-C69007673BDC" value="true"/>
+</engineerTo>
+<sourcePk>4E995D5A-6FE5-34B6-5B08-51014662FBD7</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>F816127D-E457-BFFA-A9B2-17D5EF3DB334</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>DA67FA6F-7154-93CD-B864-788DED88B059</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

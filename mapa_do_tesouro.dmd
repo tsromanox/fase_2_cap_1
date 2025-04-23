@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="mapa_do_tesouro" id="BC2E516C-58BD-572E-B626-27AFCE9E7C30" version="3.5">
+<createdBy>tromano</createdBy>
+<createdTime>2025-04-22 00:17:33 UTC</createdTime>
+<ownerDesignName>mapa_do_tesouro</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>BC2E516C-58BD-572E-B626-27AFCE9E7C30</designId>
+</OSDM_Design>
