@@ -45,17 +45,19 @@ O sistema proposto abrange diversos componentes interconectados:
 
 Dentre os arquivos e pastas presentes na raiz do projeto, definem-se:
 
-- <b>assets</b>: Diagrama do Projeto em formato PDF
+- <b>assets</b>: Diagrama do Projeto em formato PNG
 
-- <b>document</b>: aqui estão todos os documentos do projeto que as atividades poderão pedir. Na subpasta "other", adicione documentos complementares e menos importantes.
+- <b>document</b>: Diagrama do Projeto em formato PDF
 
 - <b>mapa_do_tesouro.dmd</b>: Projeto do modelo MER que deve ser aberto com o <a href="https://www.oracle.com/br/database/sqldeveloper/technologies/sql-data-modeler/download/">SQL Developer Data Modeler</a>
 
 - <b>README.md</b>: arquivo que serve como guia e explicação geral sobre o projeto (o mesmo que você está lendo agora).
 
-## 🔧 Como executar o código
+## 🔧 Diagrama
 
-*Acrescentar as informações necessárias sobre pré-requisitos (IDEs, serviços, bibliotecas etc.) e instalação básica do projeto, descrevendo eventuais versões utilizadas. Colocar um passo a passo de como o leitor pode baixar o seu código e executá-lo a partir de sua máquina ou seu repositório. Considere a explicação organizada em fase.*
+<p align="center">
+<a href= "https://www.fiap.com.br/"><img src="assets/Logical.png"></a>
+</p>
 
 ## 📊 Entidades
 ### - <b>Fazenda</b>: Fazenda a ser monitorda
@@ -127,6 +129,30 @@ Princípio: Podem utilizar tecnologias espectroscópicas (medindo a absorção d
 
 Considerações: Fornecem dados em tempo real para orientar a fertilização de precisão. A tecnologia de sensores NPK diretos no solo ainda está em evolução, e sua precisão e confiabilidade podem variar em comparação com análises laboratoriais tradicionais, embora ofereçam a vantagem da medição instantânea no campo.
 
+**Formatos de Dados**
+
+* **Saída do Sensor:** Os sensores podem fornecer leituras brutas (ex: resistência elétrica, voltagem, contagem de pulsos) que precisam ser convertidas em unidades agronômicas significativas (%, kPa, unidades de pH, ppm ou mg/dm³) usando equações de calibração específicas.
+Alternativamente, alguns sensores realizam essa conversão internamente e fornecem diretamente os valores processados. 
+* **Formato de Transmissão (Payload):** Os dados precisam ser empacotados em um formato padronizado para transmissão pela rede.  
+  * *JSON (JavaScript Object Notation):* É um formato amplamente recomendado e utilizado em IoT por ser leve, legível por humanos e facilmente interpretável por máquinas (parsing). Um payload JSON típico para dados de sensores incluiria pares chave-valor, como:  
+    JSON  
+    {  
+      "sensor\_id": "UMD-001",  
+      "timestamp": 1678886400, // Exemplo de timestamp Unix  
+      "localizacao": {  
+        "latitude": \-23.5505,  
+        "longitude": \-46.6333,  
+        "zona": "Talhao-A"  
+      },  
+      "medicoes": {  
+        "umidade\_vwc": 35.2, // em %  
+        "ph": 6.1,  
+        "fosforo\_ppm": 15,  
+        "potassio\_ppm": 80  
+      }  
+    }  
+    É importante notar que, ao incorporar uma string JSON dentro de outra estrutura (como um comando de publicação MQTT), pode ser necessário "escapar" caracteres especiais como aspas duplas internas.
+  * *Outros Formatos:* Formatos binários ou hexadecimais podem ser usados para minimizar o tamanho do payload, economizando largura de banda e energia, mas são menos legíveis e requerem decodificação específica.
 ### - <b>Metrica</b>: Cadastro dos sensores utilizados
 ENTIDADE: T_FTS_Metrica
 
@@ -141,7 +167,14 @@ ENTIDADE: T_FTS_Metrica
 
 * 0.1.0 - 22/04/2025
     *
+## 📋 Referências
+1. IoT in Agriculture: 10 Use Cases for Smart Farming Technologies | Digi International, acessado em abril 21, 2025, [https://www.digi.com/blog/post/iot-in-agriculture](https://www.digi.com/blog/post/iot-in-agriculture)  
+2. Smart Farming Using AI, IoT, and Remote Sensing \- Spectroscopy Online, acessado em abril 21, 2025, [https://www.spectroscopyonline.com/view/smart-farming-using-ai-iot-and-remote-sensing](https://www.spectroscopyonline.com/view/smart-farming-using-ai-iot-and-remote-sensing)  
+3. Top 10 Crucial Correlations Driving Agriculture Yields Today \- Number Analytics, acessado em abril 21, 2025, [https://www.numberanalytics.com/blog/top-10-crucial-correlations-agriculture-yields](https://www.numberanalytics.com/blog/top-10-crucial-correlations-agriculture-yields)  
+4. The Role of Data Analytics in Modern Agriculture \- Cropin, acessado em abril 21, 2025, [https://www.cropin.com/blogs/role-of-data-analytics-in-agriculture.html](https://www.cropin.com/blogs/role-of-data-analytics-in-agriculture.html)  
+5. The integration of Internet of Things (IoT) in precision agriculture, acessado em abril 21, 2025, [https://www.abrinternationaljournal.org/articles/the-integration-of-internet-of-things-iot-in-precision-agriculture-110323.html](https://www.abrinternationaljournal.org/articles/the-integration-of-internet-of-things-iot-in-precision-agriculture-110323.html)  
 
+6. Foi usado Google Gemini [https://gemini.google.com/], onde foi solicitado modo de funcionando de sensores usados na Agricultura de precisão
 ## 📋 Licença
 
 <img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://github.com/agodoi/template">MODELO GIT FIAP</a> por <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://fiap.com.br">Fiap</a> está licenciado sobre <a href="http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Attribution 4.0 International</a>.</p>
